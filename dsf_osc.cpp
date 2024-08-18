@@ -51,9 +51,6 @@ float DSFOscillator::Process()
     theta_ += TWOPI_DSF * center_frequency_ / sample_rate_;
 
     beta_ += TWOPI_DSF * modulation_frequency_ / sample_rate_;
-    
-    // for reverse, perhaps something like this?
-    // beta_ -= TWOPI_DSF * modulation_frequency_ / sample_rate_;
 
     if (theta_ >= TWOPI_DSF)
     {
